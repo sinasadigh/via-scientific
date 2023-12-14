@@ -1,0 +1,35 @@
+{
+  "name": "via-scientific",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "app-module-path": "^2.2.0",
+    "auto-bind": "^3.0.0",
+    "colors": "^1.4.0",
+    "compression": "^1.7.4",
+    "config": "^3.3.9",
+    "constant-case": "^3.0.4",
+    "cors": "^2.8.5",
+    "csv-parser": "^3.0.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-validator": "^7.0.1",
+    "helmet": "^7.1.0",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4",
+    "mongo-seeding": "^3.7.2",
+    "mongoose": "^8.0.3",
+    "mongoose-hidden": "^1.9.1",
+    "nodemon": "^3.0.2",
+    "pascalcase": "^1.0.0",
+    "pluralize": "^8.0.0"
+  }
+}

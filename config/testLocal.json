@@ -1,0 +1,17 @@
+{
+  "applicationPort": 6000,
+  "db": "mongodb://127.0.0.1:27017/omicsdbTest",
+  "dbOptions": {
+    "useNewUrlParser": true,
+    "useUnifiedTopology": true,
+    "autoIndex": true,
+    "useFindAndModify": false,
+    "keepAlive": true,
+    "keepAliveInitialDelay": 300000,
+    "socketTimeoutMS": 30000,
+    "poolSize": 10
+  },
+  "baseUrl": {
+    "url": "http://localhost:6000/api"
+  }
+}

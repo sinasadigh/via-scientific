@@ -1,0 +1,13 @@
+{
+  "applicationPort": 3000,
+
+  "db": "mongodb://127.0.0.1:27017/omicsdb",
+  "dbOptions": {
+    "autoIndex": true,
+    "socketTimeoutMS": 30000
+  },
+
+  "baseUrl": {
+    "url": "http://localhost:3000/api"
+  }
+}
