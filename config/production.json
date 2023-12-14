@@ -1,0 +1,7 @@
+{
+  "db": "mongodb://mongodb:27017/omicsdb",
+
+  "baseUrl": {
+    "url": "https://x.xyz.com/api"
+  }
+}

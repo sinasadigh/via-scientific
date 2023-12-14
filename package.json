@@ -5,7 +5,18 @@
   "main": "server.js",
   "scripts": {
     "seed": "node seeder.js",
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "ltest": "set NODE_ENV=testLocal&&jest"
+  },
+  "jest": {
+    "testTimeout": 30000,
+    "collectCoverage": true,
+    "silent": true,
+    "forceExit": true,
+    "verbose": true,
+    "notify": false,
+    "testEnvironment": "node",
+    "maxWorkers": 1
   },
   "keywords": [],
   "author": "",
@@ -31,5 +42,9 @@
     "nodemon": "^3.0.2",
     "pascalcase": "^1.0.0",
     "pluralize": "^8.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^6.3.3"
   }
 }
