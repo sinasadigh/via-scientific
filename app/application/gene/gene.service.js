@@ -6,29 +6,6 @@ const {
   calculateVariance,
 } = require("../../utils/math");
 
-// // Function to calculate the median
-// const calculateMedian = (data) => {
-//   const sortedData = data.slice().sort((a, b) => a - b);
-//   const mid = Math.floor(sortedData.length / 2);
-
-//   if (sortedData.length % 2 === 0) {
-//     return (sortedData[mid - 1] + sortedData[mid]) / 2;
-//   } else {
-//     return sortedData[mid];
-//   }
-// };
-
-// // Function to calculate the variance
-// const calculateVariance = (data) => {
-//   const mean = calculateMean(data);
-//   const squaredDifferences = data.map((value) => Math.pow(value - mean, 2));
-//   const sumSquaredDifferences = squaredDifferences.reduce(
-//     (acc, value) => acc + value,
-//     0
-//   );
-//   return sumSquaredDifferences / data.length;
-// };
-
 class GeneService extends Service {
   createGene = async (geneData) => {
     try {

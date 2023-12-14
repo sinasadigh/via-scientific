@@ -1,6 +1,6 @@
 const Validator = require("../../helper/validator/index");
 const { Gene } = require("../../helper/mongo/models");
-const { check, body, param, query, matchedData } = require("express-validator");
+const { body, param } = require("express-validator");
 const errors = require("../../enums/errors");
 const nouns = require("../../enums/nouns");
 class GeneValidator extends Validator {
