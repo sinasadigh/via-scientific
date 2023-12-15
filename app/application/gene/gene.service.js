@@ -4,6 +4,7 @@ const {
   calculateMean,
   calculateMedian,
   calculateVariance,
+  detectAnomalies,
 } = require("../../utils/math");
 
 class GeneService extends Service {
@@ -42,8 +43,9 @@ class GeneService extends Service {
       const mean = calculateMean(expressionData);
       const median = calculateMedian(expressionData);
       const variance = calculateVariance(expressionData);
-
-      return { mean, median, variance };
+      const anomalies = detectAnomalies(expressionData);
+      
+      return { mean, median, variance, anomalies };
     } catch (error) {
       console.log(error);
       throw error;

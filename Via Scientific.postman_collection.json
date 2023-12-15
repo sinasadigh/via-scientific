@@ -1,0 +1,98 @@
+{
+	"info": {
+		"_postman_id": "3f646161-8179-4106-b11a-b53633b9952f",
+		"name": "Via Scientific",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9592565"
+	},
+	"item": [
+		{
+			"name": "Create Gene",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"genes\": [\n        {\n            \"geneID\": \"test3\",\n            \"transcript\": \"test trasncript\",\n            \"experRep\": [\n                1,\n                3,\n                2\n            ],\n            \"controlRep\": [\n                1,\n                2,\n                3\n            ]\n        },\n        {\n            \"geneID\": \"test4\",\n            \"transcript\": \"test trasncript\",\n            \"experRep\": [\n                1,\n                3,\n                2\n            ],\n            \"controlRep\": [\n                1,\n                2,\n                3\n            ]\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/genes",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"genes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Genes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/genes",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"genes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get one gene by GeneID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/genes/test2",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"genes",
+						"test2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Gene Analytics",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/genes/test2/analytics",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"genes",
+						"test2",
+						"analytics"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

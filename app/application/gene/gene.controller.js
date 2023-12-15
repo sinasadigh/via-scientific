@@ -46,8 +46,8 @@ class GeneController extends Controller {
       return returnResponse(
         res,
         OK,
-        null,
         messages.DATA_SUBMITTED_SUCCESSFULLY(nouns.GENE),
+        null,
         result
       );
     } catch (error) {
