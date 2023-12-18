@@ -7,7 +7,7 @@ class GeneValidator extends Validator {
   create() {
     return [
       body("genes")
-        .exists()
+        .exists({ checkFalsy: false})
         .withMessage(errors.FILL_REQUIRED_FIELD("genes"))
         .isArray()
         .withMessage(errors.SHOULD_BE_ARRAY("genes"))
@@ -25,6 +25,7 @@ class GeneValidator extends Validator {
             geneIDMap[geneID] = true;
           }
           const geneIDs = value.map((item) => item.geneID);
+          if(geneIDs.length == 0) throw new Error(errors.FILL_REQUIRED_FIELD("genes"));
           const duplicatesInDatabase = await Gene.find({
             geneID: { $in: geneIDs },
           });
