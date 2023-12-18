@@ -23,6 +23,7 @@ docker-compose up
 ```
 
 If you prefer to run the application without Docker, follow these steps:
+
 1- Create a .env file and set the environment to development:
 NODE_ENV=dev
 
