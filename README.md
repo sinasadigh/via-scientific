@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains the backend for [Your Project Name]. The backend is built using Node.js and can be run either with Docker or without Docker.
+This repository contains the backend for Via Scientific Backend. The backend is built using Node.js and can be run either with Docker or without Docker.
 
 ## Prerequisites
 
